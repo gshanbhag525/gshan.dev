@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -14,24 +14,26 @@
     overflow: hidden;
 
     .imgContainer {
-      width: 700px;
-      height: 700px;
-      background-color: crimson;
+      width: 350px;
+      height: 350px;
+      background-color: #fbce0f;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
+      margin: 100px 100px;
 
-      @include mobile{
+      @include mobile {
         align-items: flex-start;
+        margin: 0 0;
       }
 
       img {
-        height: 90%;
+        height: 100%;
 
-        @include mobile{
-          height: 50%;
+        @include mobile {
+          height: 100%;
         }
       }
     }
@@ -48,16 +50,29 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         padding-left: 0;
         align-items: center;
+      }
+
+      Button {
+        width: 300px;
+        height: 50px;
+        display: flex;
+        margin: 30px 0;
+        background-color: crimson;
+        color: white;
+
+        @include mobile {
+          width: auto;
+        }
       }
 
       h1 {
         font-size: 60px;
         margin: 10px 0;
 
-        @include mobile{
+        @include mobile {
           font-size: 40px;
         }
       }
@@ -67,7 +82,7 @@
       h3 {
         font-size: 30px;
 
-        @include mobile{
+        @include mobile {
           font-size: 20px;
         }
 
@@ -81,12 +96,12 @@
         }
 
         @keyframes blink {
-            50%{
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
         }
       }
     }

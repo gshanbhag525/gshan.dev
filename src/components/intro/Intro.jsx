@@ -1,6 +1,7 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { Button } from "@material-ui/core";
 
 export default function Intro() {
   const textRef = useRef();
@@ -9,7 +10,7 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      backSpeed:60,
+      backSpeed: 60,
       strings: ["Developer", "Designer", "Content Creator"],
     });
   }, []);
@@ -24,10 +25,11 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Safak Kocaoglu</h1>
+          <h1>Gunesh Shanbhag</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            Software <span ref={textRef}></span>
           </h3>
+          <Button>Download Resume</Button>
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
