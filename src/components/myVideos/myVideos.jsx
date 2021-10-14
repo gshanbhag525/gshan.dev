@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./myVideos.scss";
 
 export default function MyVideos() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
@@ -41,17 +39,11 @@ export default function MyVideos() {
     },
   ];
 
-  const handleClick = (way) => {
-    way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
-  };
   
   return (
     <div className="videos" id="myvideos">
       <div
         className="slider"
-        // style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         <h1> My Videos </h1>
         {data.map((d) => (
@@ -67,9 +59,7 @@ export default function MyVideos() {
               </div>
               <div className="left">
                 <div className="leftContainer">
-                  {/* <div className="imgContainer">
-                    <img src={d.icon} alt="" />
-                  </div> */}
+                  
                   <h2>{d.title}</h2>
                   <span>YouTube - ProgrammingKnowledge</span>
                   <p>{d.desc}</p>
@@ -81,18 +71,7 @@ export default function MyVideos() {
           </div>
         ))}
       </div>
-      {/* <img
-        src="assets/arrow.png"
-        className="arrow left"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src="assets/arrow.png"
-        className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      /> */}
+      
     </div>
   );
 }
