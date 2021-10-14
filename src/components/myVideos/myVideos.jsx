@@ -12,6 +12,8 @@ export default function MyVideos() {
         "A gentle introduction to Golang Programming Language.",
       img:
         "./assets/golang.png",
+      url:
+        "https://www.youtube.com/watch?v=3iuoQkQOx2w&list=PLS1QulWo1RIaRoN4vQQCYHWDuubEU8Vij",
     },
     {
       id: "2",
@@ -22,6 +24,8 @@ export default function MyVideos() {
           how to host your static website on AWS.",
       img:
         "./assets/aws.png",
+      url:
+        "https://www.youtube.com/playlist?list=PLS1QulWo1RIa8yYw9CPe6B30g4NhYr8z_",
     },
     {
       id: "3",
@@ -32,6 +36,8 @@ export default function MyVideos() {
         Python libraries such as Matplotlib and Seaborn ",
       img:
       "./assets/python.png",
+      url:
+        "https://www.youtube.com/playlist?list=PLS1QulWo1RIZ3tcrdZodjuXTDTIIXH8EW",
     },
   ];
 
@@ -52,10 +58,12 @@ export default function MyVideos() {
           <div className="container">
             <div className="item">
               <div className="right">
+                <a href={d.url} target="_blank">
                 <img
                   src={d.img}
                   alt=""
                 />
+                </a>
               </div>
               <div className="left">
                 <div className="leftContainer">
