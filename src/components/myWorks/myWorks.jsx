@@ -42,8 +42,11 @@ export default function MyWorks() {
               </div>
               <div className="left">
                 <div className="leftContainer">
-                  <h2>{d.title}</h2>
-
+                  <a href={d.url} target="_blank" 
+                    style={{textDecoration:"none", 
+                      color:"black",}}>
+                    <h2>{d.title}</h2>
+                  </a>
                   <span>SDE - SnapBizz CloudTech Pvt. Ltd.</span>
 
                   <p>{d.desc}</p>

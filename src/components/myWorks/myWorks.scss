@@ -80,7 +80,7 @@
             background-color: $cardsBGColor;
 
             img {
-              opacity: 0.2;
+              opacity: 0.1;
               z-index: 0;
             }
           }
@@ -147,8 +147,6 @@
               @include mobile {
                 font-size: 10px;
               }
-              // text-decoration: underline;
-              // cursor: pointer;
             }
           }
         }

@@ -1,8 +1,6 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Blogs from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
-import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import MyWorks from "./components/myWorks/myWorks";
 import MyVideos from "./components/myVideos/myVideos";
@@ -21,8 +19,7 @@ function App() {
         <MyWorks />
         <Blogs />
         <MyVideos />
-        {/* <Testimonials /> */}
-        {/* <Contact /> */}
+        <Contact />
       </div>
     </div>
   );
