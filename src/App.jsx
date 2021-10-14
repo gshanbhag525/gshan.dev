@@ -22,7 +22,7 @@ function App() {
         <Blogs />
         <MyVideos />
         {/* <Testimonials /> */}
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </div>
   );

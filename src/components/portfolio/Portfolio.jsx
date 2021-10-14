@@ -62,7 +62,11 @@ export default function Blogs() {
           </div>
         ))}
       </div>
-      <Button>Download Resume</Button>
+      <div className="downloadButton">
+      <a href="https://drive.google.com/file/d/1KiE368Zb8fYq3I-8Ff65t26qYRwE26o2/view?usp=sharing" target="_blank">  
+        <Button>Download Resume</Button>
+      </a>
+      </div>
     </div>
   );
 }

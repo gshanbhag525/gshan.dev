@@ -74,6 +74,11 @@
             width: auto;
             margin: auto;
           }
+
+          &:hover {
+            background-color: $mainColor;
+          }
+
         }
       }
 
