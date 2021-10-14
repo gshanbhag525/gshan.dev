@@ -40,9 +40,8 @@ export default function Blogs() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <div className="blogHeading">
-        <h1>Recent Blogs</h1>
-      </div>
+      <h1> Recent Blogs </h1>
+
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -63,9 +62,12 @@ export default function Blogs() {
         ))}
       </div>
       <div className="downloadButton">
-      <a href="https://drive.google.com/file/d/1KiE368Zb8fYq3I-8Ff65t26qYRwE26o2/view?usp=sharing" target="_blank">  
-        <Button>Download Resume</Button>
-      </a>
+        <a
+          href="https://drive.google.com/file/d/1KiE368Zb8fYq3I-8Ff65t26qYRwE26o2/view?usp=sharing"
+          target="_blank"
+        >
+          <Button>Download Resume</Button>
+        </a>
       </div>
     </div>
   );
