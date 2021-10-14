@@ -1,15 +1,10 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from "../../data";
+import { featuredPortfolio, webPortfolio, awsPortfolio } from "../../data";
+import { Button } from "@material-ui/core";
 
-export default function Portfolio() {
+export default function Blogs() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
@@ -22,16 +17,8 @@ export default function Portfolio() {
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
+      id: "aws",
+      title: "AWS",
     },
   ];
 
@@ -43,14 +30,8 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "aws":
+        setData(awsPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -59,7 +40,9 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <div className="blogHeading">
+        <h1>Recent Blogs</h1>
+      </div>
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -70,17 +53,16 @@ export default function Portfolio() {
           />
         ))}
       </ul>
+
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
+            <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
         ))}
       </div>
+      <Button>Download Resume</Button>
     </div>
   );
 }

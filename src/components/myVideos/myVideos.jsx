@@ -29,9 +29,9 @@ export default function MyVideos() {
       title: "Data visualization using Python",
       desc:
         "Data visualization of using \
-         Python libraries such as Matplotlib and Seaborn ",
+        Python libraries such as Matplotlib and Seaborn ",
       img:
-      "./assets/python.jpeg",
+      "./assets/python.png",
     },
   ];
 

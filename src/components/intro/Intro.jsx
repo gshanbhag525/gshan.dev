@@ -29,11 +29,17 @@ export default function Intro() {
           <h3>
             Software <span ref={textRef}></span>
           </h3>
-          <Button>Download Resume</Button>
+          <a href="https://drive.google.com/file/d/1KiE368Zb8fYq3I-8Ff65t26qYRwE26o2/view?usp=sharing" target="_blank">
+            <Button>
+              Download Resume
+            </Button>
+          </a>
         </div>
-        <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
-        </a>
+        <div className="arrowdown">
+          <a href="#myworks">
+            <img src="assets/down.png" alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );
