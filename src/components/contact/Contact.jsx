@@ -50,9 +50,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* <div className="footer">
-        <h2>Made with  ❤️  using  🔯 </h2>
-      </div> */}
     </div>
   );
 }

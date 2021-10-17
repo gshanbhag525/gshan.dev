@@ -27,26 +27,21 @@ export default function NewBlogs() {
           <div className="item">
             {data.map((d) => (
               // <div className="blogitem">
-                <div class="item-3">
-                  <a
-                    href={d.url}
-                    class="card"
-                  >
-                    <div
-                      class="thumb"
-                      style={ {backgroundImage: `url(${d.img})` }}
-                    ></div>
-                    <article>
-                      <h1>{d.title}</h1>
-                      <p>
-                        
-                      </p>
-                      {/* <span>Melody Nieves</span> */}
-                    </article>
-                  </a>
-                </div>
+              <div class="item-3">
+                <a href={d.url} class="card">
+                  <div
+                    class="thumb"
+                    style={{ backgroundImage: `url(${d.img})` }}
+                  ></div>
+                  <article>
+                    <h1>{d.title}</h1>
+                    <p></p>
+                    {/* <span>Melody Nieves</span> */}
+                  </article>
+                </a>
+              </div>
 
-                /* <a href={d.url} target="_blank" rel="noreferrer">
+              /* <a href={d.url} target="_blank" rel="noreferrer">
                   <img src={d.img} alt="" />
                 </a>
                 <a
@@ -58,7 +53,6 @@ export default function NewBlogs() {
                   <h2>{d.title}</h2>
                 </a>
                 <p>{d.desc}</p> */
-
 
               // </div>
             ))}

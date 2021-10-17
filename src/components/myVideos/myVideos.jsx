@@ -36,7 +36,7 @@ export default function MyVideos() {
           <div className="container">
             <div className="item">
               <div className="left">
-                <a href={d.url} target="_blank"  rel="noreferrer">
+                <a href={d.url} target="_blank" rel="noreferrer">
                   <img src={d.img} alt="" />
                 </a>
               </div>

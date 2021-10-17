@@ -1,6 +1,5 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Blogs from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import MyWorks from "./components/myWorks/myWorks";
 import MyVideos from "./components/myVideos/myVideos";
@@ -20,7 +19,6 @@ function App() {
         <Intro />
         <MyWorks />
         <NewBlogs />
-        {/* <Blogs /> */}
         <MyVideos />
         <Contact />
         <Footer />
