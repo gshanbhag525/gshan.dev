@@ -4,9 +4,11 @@ import Blogs from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import MyWorks from "./components/myWorks/myWorks";
 import MyVideos from "./components/myVideos/myVideos";
+import NewBlogs from "./components/newBlogs/newBlogs";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,9 +19,11 @@ function App() {
       <div className="sections">
         <Intro />
         <MyWorks />
-        <Blogs />
+        <NewBlogs />
+        {/* <Blogs /> */}
         <MyVideos />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -3,22 +3,18 @@
 .videos {
   background-color: $cardsBGColor;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
+  
   .slider {
-    height: 700px;
+
     display: flex;
-    position: absolute;
     left: 0;
     transition: all 1s ease-out;
     flex-direction: column;
     justify-content: center;
-    margin-top: 120px;
+    margin: 20px 0;
 
     @include mobile {
-      height: 100vh;
+      // height: 100vh;
       flex-direction: column;
       justify-content: center;
       // margin-top: -40px;
@@ -28,17 +24,19 @@
     h1 {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-left: 15%;
       height: 100px;
+      font-weight: 400;
     }
 
     .container {
       width: 100vw;
-      height: 350px;
+      height: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 20px;
+      // margin-top: 20px;
 
       @include mobile {
         height: 170px;
@@ -46,12 +44,13 @@
       }
 
       .item {
-        width: 700px;
-        height: 100%;
+        width: 70vw;
+        height: 220px;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 5px;
         display: flex;
-        align-items: center;
+        padding: 0;
+        margin: 0;
         justify-content: center;
 
         @include mobile {
@@ -60,15 +59,15 @@
           flex-direction: column;
         }
 
-        .right {
+        .left {
           flex: 4;
-          height: 80%;
+          // height: 80%;
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
           border-radius: 10px;
-          margin-left: 20px;
+          margin: 20px;
           cursor: pointer;
 
           @include mobile {
@@ -81,19 +80,25 @@
             background-color: $cardsBGColor;
             
             img {
-              opacity: 0.2;
+              padding: 10px;
+              opacity: 0.1;
               z-index: 0;
             }
           }
 
           a {
             display: flex;
+            width: 70%;
+            height: 70%;
             @include mobile {
               width: 50%;
             }
 
             img {
-              width: 400px;
+
+              border-radius: inherit;
+              width: 100%;
+
 
               @include mobile {
                 width: auto;
@@ -102,25 +107,24 @@
             }
           }
         }
-        .left {
+        .right {
           flex: 8;
           height: 80%;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
+          margin: 20px;
 
           @include mobile {
             width: 100%;
           }
 
-          .leftContainer {
+          .rightContainer {
             width: 90%;
-            height: 70%;
+            height: 90%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            margin-left: 20px;
-
+            
             @include mobile {
               height: 100px;
               width: 80%;
@@ -130,21 +134,29 @@
             }
 
             h2 {
-              font-size: 20px;
+              font-size: 1.5em;
+              font-weight: 500;
 
               @include mobile {
                 font-size: 13px;
               }
             }
-            p {
-              font-size: 12px;
+            
+            span {
+              font-size: 1em;
+              font-weight: 300;
+              color: grey;
+              margin: 10px 0;
               @include mobile {
                 font-size: 10px;
               }
             }
-            span {
-              font-size: 12px;
-              font-weight: 400;
+
+            p {
+              font-size: 1em;
+              font-weight: 300;
+              margin: 10px 0;
+              text-align: justify;
               @include mobile {
                 font-size: 10px;
               }

@@ -14,8 +14,7 @@ export default function MyVideos() {
       id: "2",
       icon: "./assets/mobile.png",
       title: "Introduction to AWS Services",
-      desc: "Introduction to different AWS services and \
-          how to host your static website on AWS.",
+      desc: "Introduction to different AWS services and how to host your static website on AWS.",
       img: "./assets/aws.png",
       url: "https://www.youtube.com/playlist?list=PLS1QulWo1RIa8yYw9CPe6B30g4NhYr8z_",
     },
@@ -23,8 +22,7 @@ export default function MyVideos() {
       id: "3",
       icon: "./assets/mobile.png",
       title: "Data visualization using Python",
-      desc: "Data visualization of using \
-        Python libraries such as Matplotlib and Seaborn ",
+      desc: "Data visualization of using Python libraries such as Matplotlib and Seaborn ",
       img: "./assets/python.png",
       url: "https://www.youtube.com/playlist?list=PLS1QulWo1RIZ3tcrdZodjuXTDTIIXH8EW",
     },
@@ -37,22 +35,22 @@ export default function MyVideos() {
         {data.map((d) => (
           <div className="container">
             <div className="item">
-              <div className="right">
-                <a href={d.url} target="_blank">
+              <div className="left">
+                <a href={d.url} target="_blank"  rel="noreferrer">
                   <img src={d.img} alt="" />
                 </a>
               </div>
-              <div className="left">
-                <div className="leftContainer">
+              <div className="right">
+                <div className="rightContainer">
                   <a
                     href={d.url}
                     target="_blank"
+                    rel="noreferrer"
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     <h2>{d.title}</h2>
                   </a>
                   <span>YouTube - ProgrammingKnowledge</span>
-
                   <p>{d.desc}</p>
                 </div>
               </div>

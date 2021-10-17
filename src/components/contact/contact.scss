@@ -4,13 +4,18 @@
   background-color: white;
 
   .contactCenter {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 45%;
     margin-top: 20px;
+    margin-bottom: 10px;
 
-    h2 {
-      font-size: 30px;
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 15%;
+      height: 100px;
+      font-weight: 400;
     }
   }
 
@@ -31,8 +36,9 @@
       }
 
       img {
-        height: 100%;
-        width: 100%;
+        height: 80%;
+        width: 80%;
+        padding-left: 10%;
 
         @include mobile {
           // width: 300px;
@@ -45,7 +51,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      // justify-content: center;
+
 
       @include mobile {
         display: flex;
@@ -59,7 +66,7 @@
         height: 70%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
 
         @include mobile {
@@ -89,24 +96,21 @@
     }
   }
 
-  .footer {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: $footerBG;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  // .footer {
+  //   margin-top: 1rem;
+  //   padding: 0.5rem;
+  //   background-color: $footerBG;
+  //   position: fixed;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   justify-content: center;
+  //   align-items: center;
+  //   display: flex;
 
-    &:hover {
-      background-color: $cardsBGColor;
-    }
-
-    h2 {
-      font-size: 12px;
-    }
-  }
+  //   
+  //   h2 {
+  //     font-size: 12px;
+  //   }
+  // }
 }

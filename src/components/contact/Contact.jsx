@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "./contact.scss";
-import footerBG from "../../global.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -9,16 +7,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
-  const [message, setMessage] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-  };
   return (
     <div className="contact" id="contact">
       <div className="contactCenter">
-        <h2>Social</h2>
+        <h1>Social</h1>
       </div>
       <div className="container">
         <div className="left">
@@ -27,7 +19,11 @@ export default function Contact() {
         <div className="right">
           <div className="social">
             <div className="itemContainer">
-              <a href="mailto:gshanbhag525@gmail.com" target="_blank">
+              <a
+                href="mailto:gshanbhag525@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGoogle} size="3x" />
               </a>
             </div>
@@ -36,22 +32,27 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/gunesh-shanbhag525/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
             </div>
 
             <div className="itemContainer">
-              <a href="https://github.com/gshanbhag525/" target="_blank">
+              <a
+                href="https://github.com/gshanbhag525/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} size="3x" />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer">
+      {/* <div className="footer">
         <h2>Made with  ❤️  using  🔯 </h2>
-      </div>
+      </div> */}
     </div>
   );
 }
