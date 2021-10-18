@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/gshan.dev/static/css/main.3e00d1c5.chunk.css",
-    "main.js": "/gshan.dev/static/js/main.1c90ee73.chunk.js",
-    "main.js.map": "/gshan.dev/static/js/main.1c90ee73.chunk.js.map",
+    "main.css": "/gshan.dev/static/css/main.959e99d4.chunk.css",
+    "main.js": "/gshan.dev/static/js/main.e991968d.chunk.js",
+    "main.js.map": "/gshan.dev/static/js/main.e991968d.chunk.js.map",
     "runtime-main.js": "/gshan.dev/static/js/runtime-main.55ab10a3.js",
     "runtime-main.js.map": "/gshan.dev/static/js/runtime-main.55ab10a3.js.map",
-    "static/js/2.2312d8d1.chunk.js": "/gshan.dev/static/js/2.2312d8d1.chunk.js",
-    "static/js/2.2312d8d1.chunk.js.map": "/gshan.dev/static/js/2.2312d8d1.chunk.js.map",
+    "static/js/2.6509a054.chunk.js": "/gshan.dev/static/js/2.6509a054.chunk.js",
+    "static/js/2.6509a054.chunk.js.map": "/gshan.dev/static/js/2.6509a054.chunk.js.map",
     "index.html": "/gshan.dev/index.html",
-    "static/css/main.3e00d1c5.chunk.css.map": "/gshan.dev/static/css/main.3e00d1c5.chunk.css.map",
-    "static/js/2.2312d8d1.chunk.js.LICENSE.txt": "/gshan.dev/static/js/2.2312d8d1.chunk.js.LICENSE.txt"
+    "static/css/main.959e99d4.chunk.css.map": "/gshan.dev/static/css/main.959e99d4.chunk.css.map",
+    "static/js/2.6509a054.chunk.js.LICENSE.txt": "/gshan.dev/static/js/2.6509a054.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.55ab10a3.js",
-    "static/js/2.2312d8d1.chunk.js",
-    "static/css/main.3e00d1c5.chunk.css",
-    "static/js/main.1c90ee73.chunk.js"
+    "static/js/2.6509a054.chunk.js",
+    "static/css/main.959e99d4.chunk.css",
+    "static/js/main.e991968d.chunk.js"
   ]
 }
