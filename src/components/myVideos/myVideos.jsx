@@ -32,9 +32,9 @@ export default function MyVideos() {
     <div className="videos" id="myvideos">
       <div className="slider">
         <h1> My Videos </h1>
-        {data.map((d) => (
-          <div className="container">
-            <div className="item">
+        {data.map((d, key) => (
+          <div className="container" key={key}>
+            <div className="item" >
               <div className="left">
                 <a href={d.url} target="_blank" rel="noreferrer">
                   <img src={d.img} alt="" />

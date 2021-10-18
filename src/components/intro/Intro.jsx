@@ -1,5 +1,6 @@
 import "./intro.scss";
 import { Button } from "@material-ui/core";
+import { resumeLink } from "../../data";
 
 export default function Intro() {
   return (
@@ -18,7 +19,7 @@ export default function Intro() {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1KiE368Zb8fYq3I-8Ff65t26qYRwE26o2/view?usp=sharing"
+            href={resumeLink.url}
             target="_blank"
             rel="noreferrer"
           >

@@ -32,8 +32,8 @@ export default function MyWorks() {
     <div className="myworks" id="myworks">
       <div className="slider">
         <h1> My Works </h1>
-        {data.map((d) => (
-          <div className="container">
+        {data.map((d, key) => (
+          <div className="container" key={key}>
             <div className="item">
               <div className="left">
                 <a href={d.url} target="_blank" rel="noreferrer">

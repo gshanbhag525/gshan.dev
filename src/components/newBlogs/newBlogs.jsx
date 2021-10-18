@@ -1,4 +1,6 @@
 import "./newBlogs.scss";
+import { resumeLink } from "../../data";
+import { Button } from "@material-ui/core";
 
 export default function NewBlogs() {
   const data = [
@@ -24,13 +26,13 @@ export default function NewBlogs() {
         <h1> My Blogs </h1>
 
         <div className="container">
-          <div className="item">
-            {data.map((d) => (
+          <div className="item" >
+            {data.map((d, key) => (
               // <div className="blogitem">
-              <div class="item-3">
-                <a href={d.url} class="card">
+              <div className="item-3" key={key}>
+                <a href={d.url} className="card">
                   <div
-                    class="thumb"
+                    className="thumb"
                     style={{ backgroundImage: `url(${d.img})` }}
                   ></div>
                   <article>
@@ -58,6 +60,10 @@ export default function NewBlogs() {
             ))}
           </div>
         </div>
+
+        <a href={resumeLink.url} target="_blank" rel="noreferrer">
+          <Button>Download Resume</Button>
+        </a>
       </div>
     </div>
   );
