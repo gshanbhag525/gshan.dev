@@ -13,9 +13,9 @@ export default function NewBlogs() {
     },
     {
       id: "2",
-      title: "Hosting your static site for free.",
+      title: "Host your portfolio website for FREE",
       desc: "AWS",
-      img: "./assets/aws.png",
+      img: "./assets/ghpages.jpeg",
       url: "",
     },
   ];
@@ -29,7 +29,7 @@ export default function NewBlogs() {
           <div className="item" >
             {data.map((d, key) => (
               // <div className="blogitem">
-              <div className="item-3" key={key}>
+              <div className="item-3" key={key} style={{width: "50%"}}>
                 <a href={d.url} className="card">
                   <div
                     className="thumb"
