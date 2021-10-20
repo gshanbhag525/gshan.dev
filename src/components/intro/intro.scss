@@ -12,7 +12,13 @@
   .left {
     flex: 0.5;
     position: relative;
+    order: 1;
 
+    @include mobile {
+      display: flex;
+      order: 2;
+    }
+    
     .wrapper {
       width: 100%;
       padding-left: 30%;
@@ -81,11 +87,14 @@
   .right {
     flex: 0.5;
     overflow: hidden;
-
+    order: 2;
+    
     @include mobile {
       margin-top: 30px;
       margin-bottom: 30px;
+      order: 1;
     }
+    
     .imgContainer {
       width: 250px;
       height: 250px;
