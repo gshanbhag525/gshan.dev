@@ -22,7 +22,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "predeploy": "yarn run build; echo \"www.gshan.dev\" > .build/CNAME", 
+    "predeploy": "yarn run build; echo 'www.gshan.dev' > .build/CNAME", 
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
