@@ -8,7 +8,7 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="social">
         <a
           href="mailto:gshanbhag525@gmail.com"
