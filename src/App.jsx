@@ -1,6 +1,5 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Contact from "./components/contact/Contact";
 import MyWorks from "./components/myWorks/myWorks";
 import MyVideos from "./components/myVideos/myVideos";
 import NewBlogs from "./components/newBlogs/newBlogs";
@@ -20,7 +19,6 @@ function App() {
         <MyWorks />
         <NewBlogs />
         <MyVideos />
-        <Contact />
         <Footer />
       </div>
     </div>

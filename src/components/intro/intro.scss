@@ -36,7 +36,7 @@
           height: 50px;
           display: flex;
           margin: 45px 0;
-          background-color: crimson;
+          background-color: $btnColor;
           color: white;
 
           @include mobile {

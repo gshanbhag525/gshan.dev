@@ -3,9 +3,29 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  padding: 10px;
+  background-color: $whiteBG;
+  flex-direction: column;
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin: 10px;
+      text-decoration: none;
+      color: black;
+
+      &:hover{
+        color: $btnColor;
+      }
+    }
+  }
 
   span {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
