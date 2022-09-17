@@ -7,7 +7,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="wrapper">
-          <h2>Hi, I am Gunesh,</h2>
+          <h2>Hi, I am Gunesh Shanbhag,</h2>
           <br />
           <h2>Software dev</h2>
           <p>
